@@ -25,12 +25,6 @@ class Solution {
         if(s>m){
             m =s;
         }
-        if (m<l+root.val){
-            m= l+root.val;
-        }
-        if(m<r+root.val){
-            m= r+root.val;
-        }
         return root.val+Math.max(l,r);
     }
     public int maxPathSum(TreeNode root) {
